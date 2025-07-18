@@ -15,8 +15,8 @@ color_map = {
     "Watermelon": "FFC107", "Pumpkin": "FFC107", "Apple": "FFC107", "Bamboo": "FFC107",
     "Coconut": "FF9800", "Cactus": "FF9800", "Dragon": "FF9800", "Mango": "FF9800",
     "Grape": "9C27B0", "Mushroom": "9C27B0", "Pepper": "9C27B0", "Cacao": "9C27B0",
-    "Beanstalk": "00BCD4",
-    "Watering": "4CAF50", "Trowel": "4CAF50", "Recall": "4CAF50",
+    "Beanstalk": "00BCD4", "Ember Lily": "00BCD4", "Sugar Apple": "00BCD4", "Burning Bud": "00BCD4", 
+    "Giant Pinecone": "00BCD4", "Watering": "4CAF50", "Trowel": "4CAF50", "Recall": "4CAF50",
     "Basic": "FFC107",
     "Advanced": "9C27B0",
     "Lightning": "FF9800", "Godly": "FF9800",
@@ -125,7 +125,7 @@ def send_push_notification(title, message):
             print("⚠️ Skipped notification: ntfy.sh is on cooldown")
             return
 
-        url = "https://ntfy.sh/gag-jim"
+        url = "https://ntfy.sh/seed_stock_bot"
         response = requests.post(url, data=message, headers={"Title": title})
 
         if response.status_code == 429:
